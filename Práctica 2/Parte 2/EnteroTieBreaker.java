@@ -1,7 +1,7 @@
 package main;
 
 public class Entero {
-	private int num;
+	private volatile int num;
 	private int numHilos;
 	private volatile int last[];
 	private volatile int in[];
@@ -14,6 +14,7 @@ public class Entero {
 			last[i] = -1;
 			in [i] = -1;
 		}
+		this.numHilos = numHilos;
 	}
 
 	public void incremento(int n, int iHilo) {
