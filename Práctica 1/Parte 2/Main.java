@@ -5,13 +5,13 @@ public class Main {
 	static final int M = 100;
 
 	public static void main(String args[]) {
-		Enterititi numeritoReshulon = new Enterititi();
+		Enterititi numR = new Enterititi();
 		MyThreadIncremento hilitosIncrementadores[] = new MyThreadIncremento[M];
 		MyThreadDecremento hilitosDecrementadores[] = new MyThreadDecremento[M];
 
 		for (int i = 0; i < M; ++i) {
-			hilitosIncrementadores[i] = new MyThreadIncremento(numeritoReshulon, N);
-			hilitosDecrementadores[i] = new MyThreadDecremento(numeritoReshulon, N);
+			hilitosIncrementadores[i] = new MyThreadIncremento(numR, N);
+			hilitosDecrementadores[i] = new MyThreadDecremento(numR, N);
 			hilitosIncrementadores[i].start();
 			hilitosDecrementadores[i].start();
 		}
@@ -25,7 +25,7 @@ public class Main {
 			}
 		}
 		
-		System.out.println("EI MAN, LUS CHOCOPOS BA N AVAU HAHAHAA");
-		System.out.println(numeritoReshulon.toString());
+		System.out.println("Stop");
+		System.out.println(numR.toString());
 	}
 }

@@ -20,6 +20,6 @@ public class Main {
 				e.printStackTrace();
 			}
 		}
-		System.out.println("EI MAN, LUS CHOCOPOS BA N AVAU HAHAHAA");
+		System.out.println("Stop");
 	}
 }
