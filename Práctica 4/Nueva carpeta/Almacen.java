@@ -3,6 +3,7 @@ package main;
 import java.util.ArrayList;
 
 public class Almacen<T> {
+	
 	private int tam;
 	private ArrayList<T> buff;
 	
